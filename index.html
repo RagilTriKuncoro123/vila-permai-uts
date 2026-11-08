@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vila Permai menyediakan pemesanan vila yang nyaman untuk liburan keluarga dan pasangan."
+    />
+    <title>Vila Permai | Pemesanan Vila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <div class="brand" aria-label="Logo Vila Permai">
+          <span class="brand-mark">V</span>
+          <div>
+            <strong>Vila Permai</strong>
+            <small>Puncak, Bogor</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a href="#home">Beranda</a>
+          <a href="#fasilitas">Fasilitas</a>
+          <a href="#villa">Tipe Vila</a>
+          <a href="#booking">Reservasi</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Wisata keluarga & liburan santai</p>
+            <h1>Tempat liburan nyaman untuk keluarga Anda.</h1>
+            <p>
+              Nikmati suasana alam yang tenang, kamar yang bersih, dan fasilitas
+              lengkap di Vila Permai. Cocok untuk liburan akhir pekan maupun
+              menginap bersama keluarga.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#booking">Pesan Sekarang</a>
+              <a class="button secondary" href="#villa">Lihat Vila</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Statistik vila">
+              <li>
+                <strong>4.9/5</strong>
+                <span>Rating tamu</span>
+              </li>
+              <li>
+                <strong>12</strong>
+                <span>Kamar nyaman</span>
+              </li>
+              <li>
+                <strong>24/7</strong>
+                <span>Pelayanan</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Info vila">
+            <div class="hero-card-box">
+              <div class="mini-label">Pilihan favorit</div>
+              <h2>Vila Panorama</h2>
+              <p>Destinasi santai dengan pemandangan alam dan taman yang asri.</p>
+              <div class="price-row">
+                <span class="old-price">Rp1.350.000</span>
+                <strong>Rp1.150.000</strong>
+                <small>/ malam</small>
+              </div>
+              <ul>
+                <li>2 kamar tidur</li>
+                <li>3 orang dewasa + 2 anak</li>
+                <li>Wi-Fi & kolam mini</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="fasilitas">
+        <div class="container section-head">
+          <p class="eyebrow">Fasilitas unggulan</p>
+          <h2>Semua kebutuhan liburan Anda tersedia</h2>
+        </div>
+
+        <div class="container feature-grid">
+          <article class="feature-item">
+            <div class="icon">🏊</div>
+            <h3>Kolam Renang</h3>
+            <p>Area kolam yang aman dan nyaman untuk bersantai bersama keluarga.</p>
+          </article>
+          <article class="feature-item">
+            <div class="icon">📶</div>
+            <h3>Wi-Fi Gratis</h3>
+            <p>Internet cepat untuk bekerja, belajar, atau menikmati konten.</p>
+          </article>
+          <article class="feature-item">
+            <div class="icon">🛏️</div>
+            <h3>Kamar Nyaman</h3>
+            <p>Luas ruangan, kasur empuk, dan kebersihan terjaga setiap hari.</p>
+          </article>
+          <article class="feature-item">
+            <div class="icon">🍽️</div>
+            <h3>Breakfast</h3>
+            <p>Menu sarapan sederhana yang siap disajikan setiap pagi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="villa-section" id="villa">
+        <div class="container section-head">
+          <p class="eyebrow">Pilihan vila</p>
+          <h2>Tempat tinggal yang cocok untuk setiap kebutuhan</h2>
+        </div>
+
+        <div class="container villa-grid">
+          <article class="villa-card selected" data-villa="panorama" data-price="1150000" data-capacity="5" data-room="2">
+            <div class="villa-image panorama"></div>
+            <div class="villa-content">
+              <div class="villa-topline">
+                <h3>Vila Panorama</h3>
+                <span>Rp1.150.000 / malam</span>
+              </div>
+              <p>Vila keluarga dengan pemandangan alam dan taman yang luas.</p>
+              <ul>
+                <li>2 kamar tidur</li>
+                <li>2 kamar mandi</li>
+                <li>Max 5 tamu</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="villa-card" data-villa="hutan" data-price="950000" data-capacity="4" data-room="1">
+            <div class="villa-image hutan"></div>
+            <div class="villa-content">
+              <div class="villa-topline">
+                <h3>Vila Hutan</h3>
+                <span>Rp950.000 / malam</span>
+              </div>
+              <p>Sensasi villa yang tenang dikelilingi kehijauan pepohonan.</p>
+              <ul>
+                <li>1 kamar tidur</li>
+                <li>1 kamar mandi</li>
+                <li>Max 4 tamu</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="villa-card" data-villa="tepi" data-price="1300000" data-capacity="6" data-room="3">
+            <div class="villa-image tepi"></div>
+            <div class="villa-content">
+              <div class="villa-topline">
+                <h3>Vila Tepi Danau</h3>
+                <span>Rp1.300.000 / malam</span>
+              </div>
+              <p>Villa ideal untuk keluarga besar dengan view danau yang indah.</p>
+              <ul>
+                <li>3 kamar tidur</li>
+                <li>2 kamar mandi</li>
+                <li>Max 6 tamu</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div class="container booking-layout">
+          <div class="booking-panel">
+            <div class="section-head left">
+              <p class="eyebrow">Reservasi</p>
+              <h2>Pesan vila favorit Anda</h2>
+            </div>
+
+            <form id="bookingForm" novalidate>
+              <div class="form-grid">
+                <label>
+                  <span>Nama tamu</span>
+                  <input type="text" id="guestName" name="guestName" placeholder="Masukkan nama lengkap" />
+                </label>
+
+                <label>
+                  <span>No. WhatsApp</span>
+                  <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" />
+                </label>
+
+                <label>
+                  <span>Tanggal check-in</span>
+                  <input type="date" id="checkIn" name="checkIn" />
+                </label>
+
+                <label>
+                  <span>Tanggal check-out</span>
+                  <input type="date" id="checkOut" name="checkOut" />
+                </label>
+
+                <label>
+                  <span>Jumlah tamu</span>
+                  <input type="number" id="guestCount" name="guestCount" min="1" max="10" value="2" />
+                </label>
+
+                <label>
+                  <span>Pilih vila</span>
+                  <select id="villaSelect" name="villaSelect">
+                    <option value="panorama">Vila Panorama</option>
+                    <option value="hutan">Vila Hutan</option>
+                    <option value="tepi">Vila Tepi Danau</option>
+                  </select>
+                </label>
+
+                <label>
+                  <span>Jumlah kamar</span>
+                  <input type="number" id="roomCount" name="roomCount" min="1" max="5" value="1" />
+                </label>
+
+                <label>
+                  <span>Catatan tambahan</span>
+                  <textarea id="notes" name="notes" rows="4" placeholder="Misalnya: minta kamar dekat kolam atau extra bed."></textarea>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="button primary">Kirim Pesanan</button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="summary-card" aria-live="polite">
+            <p class="eyebrow">Ringkasan pesanan</p>
+            <h3 id="summaryVillaName">Vila Panorama</h3>
+            <div class="summary-row">
+              <span>Harga per malam</span>
+              <strong id="summaryPrice">Rp1.150.000</strong>
+            </div>
+            <div class="summary-row">
+              <span>Durasi</span>
+              <strong id="summaryNights">1 malam</strong>
+            </div>
+            <div class="summary-row">
+              <span>Jumlah kamar</span>
+              <strong id="summaryRooms">1 kamar</strong>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <strong id="summaryTotal">Rp1.150.000</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="kontak">
+      <div class="container footer-grid">
+        <div>
+          <h3>Vila Permai</h3>
+          <p>Puncak, Kabupaten Bogor, Jawa Barat</p>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <p>WA: 0812-3456-7890</p>
+          <p>Email: hello@vilapermai.id</p>
+        </div>
+        <div>
+          <h4>Jam Operasional</h4>
+          <p>Senin - Minggu</p>
+          <p>08.00 - 21.00 WIB</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
