@@ -139,3 +139,9 @@ form.addEventListener('submit', (event) => {
 checkIn.value = new Date(Date.now() + 86400000).toISOString().split('T')[0];
 checkOut.value = new Date(Date.now() + 3 * 86400000).toISOString().split('T')[0];
 updateSummary();
+// Hapus pesan kesalahan saat pengguna memperbaiki input
+bookingForm.addEventListener("input", () => {
+    if (resultBox.querySelector(".result_box_error")) {
+        resultBox.replaceChildren();
+    }
+});
